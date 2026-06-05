@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Enterprise HVAC Field Operations Dashboard
 
-## Getting Started
+An AI-engineered, enterprise-grade dashboard designed for HVAC companies to streamline field service management, dispatching, and real-time crew tracking. 
 
-First, run the development server:
+Built using modern generative AI workflows (**v0.dev** and **Cursor**), powered by **Mapbox**, and hosted seamlessly on **Vercel**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Live Demo
+Check out the live deployment here: **[Insert Vercel Deployment URL Link Here]**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Mapbox Live Tracking:** Real-time geospatial visualization of field technician locations to optimize routing and dispatch.
+* **Operational KPI Tiles:** At-a-glance metrics showing active crew counts, pending calls, completed jobs, and urgent alerts.
+* **Technician Status Panel:** A left-side sidebar detailing active field crews and their real-time operational status.
+* **Live Activity Feed:** A right-side streaming feed logging instant updates as technicians input field data.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack & Workflow
 
-## Learn More
+* **UI Generation:** [v0.dev by Vercel](https://v0.dev) (Component scaffolding and layout design)
+* **Development Environment:** [Cursor AI](https://cursor.com) (Code refinement, logic implementation, and prompt-driven engineering)
+* **Mapping API:** [Mapbox GL JS](https://mapbox.com) (Real-time vehicle and crew tracking)
+* **Frontend Framework:** [Next.js / React] *(Change if you used Vite or another framework)*
+* **Styling:** Tailwind CSS (via v0.dev components)
+* **Hosting & Deployment:** [Vercel](https://vercel.com)
 
-To learn more about Next.js, take a look at the following resources:
+## 🔧 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run this dashboard locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
+* Node.js installed on your machine
+* A Mapbox access token (Get one for free at [mapbox.com](https://mapbox.com))
 
-## Deploy on Vercel
+### Installation & Setup
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com[Your-GitHub-Username]/[Your-Repo-Name].git
+   cd [Your-Repo-Name]
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables:**
+   Create a `.env.local` file in the root directory and add your Mapbox token:
+   ```env
+   NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN=your_mapbox_public_token_here
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser to view the dashboard.
+
+## 📦 Deployment
+
+This project is configured for one-click deployment on Vercel. 
+
+Ensure you add your `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN` environment variable in your Vercel project dashboard settings during deployment.
