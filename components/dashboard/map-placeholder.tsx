@@ -43,7 +43,7 @@ export function MapPlaceholder({
   useEffect(() => {
     if (!mapContainer.current || map.current) return
 
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZGV0MTBqYXNvbiIsImEiOiJjbXBxYTJ0Zngwa2g4MnNvaDh0MHlwNTR6In0.rXWeQKbCJFc8b8cN1YE2Tg';
+    mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN || '';
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
